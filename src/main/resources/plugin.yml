@@ -1,0 +1,15 @@
+name: ${name}
+version: ${version}
+main: ${main}
+authors: [ cyberpwn ]
+website: volmit.com
+api-version: ${apiversion}
+description: Only store changes to the world, don't store the entire world itself. Best for low storage environments.
+libraries:
+  - com.google.code.gson:gson:2.8.9
+commands:
+  singularity:
+    aliases: [ sing, sly ]
+    default: op
+    permission: singularity.use
+hotload-dependencies: false
