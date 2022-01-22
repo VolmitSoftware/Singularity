@@ -1,16 +1,23 @@
 package com.volmit.singularity;
 
+import com.volmit.singularity.services.EgressService;
+import com.volmit.singularity.services.IngressService;
+import com.volmit.singularity.services.StorageService;
+import com.volmit.singularity.services.WorldService;
+import org.bukkit.World;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 
 public class Singularity extends JavaPlugin {
     public static Singularity instance;
+    public static WorldService worldService;
 
     @Override
     public void onEnable()
     {
         instance = this;
+        worldService = new WorldService();
     }
 
     @Override
